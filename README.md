@@ -1,6 +1,6 @@
 ## 机器学习
 
-#### [Softmax Regression](Notes/Softmax Regression.md) 
+#### [Softmax-Regression](Notes/Softmax-Regression.md) 
 
 ####  [Mini-Batch](Notes/Mini-Batch.md) 
 
