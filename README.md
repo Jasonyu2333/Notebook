@@ -4,5 +4,5 @@
 
 
 
-###  [Mini-Batch.md](Notes\Mini-Batch.md) 
+###  [Mini-Batch.md](Notes/Mini-Batch.md) 
 
