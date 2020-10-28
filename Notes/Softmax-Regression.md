@@ -11,5 +11,4 @@
 输出层有N个输出$0_{1}$,$0_{2}$...
 
 
-$\hat{y_{1}} = P\left ( y = i \right ) = \frac{e^{O_{i}}}{\sum_{j=0}^{N-1}e^{O_{j}}}$
-$\frac{ew}{233}$
+${\boldsymbol{O}}^{(i)} = {\boldsymbol{x}}^{(i)}\boldsymbol{W} + \boldsymbol{b} $
