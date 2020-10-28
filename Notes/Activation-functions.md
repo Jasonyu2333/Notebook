@@ -1,10 +1,6 @@
-## Activation-functions(激活函数)
+# Activation-functions(激活函数)
 
-[TOC]
-
-
-
-### WHAT is Activation-functions?
+## WHAT is Activation-functions?
 
 在神经元中，输入通过线性变换后，还被作用了一个非线性函数，称为激活函数。
 
