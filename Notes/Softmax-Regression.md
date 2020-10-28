@@ -21,6 +21,4 @@ ${\hat{\boldsymbol{y}}}^{(i)} = softmax({\boldsymbol{O}}^{(i)})$
 
 
 
-
-
 $ \hat{y_{1}} = P\left ( y = i \right ) = \frac{e^{O_{i}}}{\sum_{j=0}^{N-1}e^{O_{j}}} $
