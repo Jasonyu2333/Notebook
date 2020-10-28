@@ -1,3 +1,5 @@
+
+
 ## 机器学习
 
 #### [Softmax-Regression](Notes/Softmax-Regression.md) 
@@ -11,5 +13,15 @@
 #### [内置函数](Notes/内置函数.md)
 
 ## Pytorch
+#### [Tensor](Notes/Tensor.md)
+
+#### [torch.nn](Notes/torch.nn.md) 
+
+#### [Activation-functions](Notes/Activation-functions.md) 
+
 ####  [Dataset和Dataloader](Notes/Dataset和Dataloader.md) 
+
+####  [Torchvision](Notes/Torchvision.md)
+
+
 
