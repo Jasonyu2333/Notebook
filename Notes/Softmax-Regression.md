@@ -10,5 +10,5 @@
 
 输出层有N个输出$0_{1}$,$0_{2}$...
 
-$ {y}_{i} = P\left ( y = i \right ) = \frac{e^{O_{i}}}{\sum_{j=0}^{N-1}e^{O_{j}}}$
+${y}_{i} = P\left ( y = i \right ) = \frac{e^{O_{i}}}{\sum_{j=0}^{N-1}e^{O_{j}}}$
 
