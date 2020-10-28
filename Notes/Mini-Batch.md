@@ -1,28 +1,19 @@
-### Mini-Batch
+## Mini-Batch
 
-------
+### 概念
 
-基本概念
+- epoch：训练轮数
+- batch-size：一次训练的样本数
+- teration：迭代次数
 
-1. epoch：训练轮数
+### 实现
 
-2. batch-size：一次训练的样本数
+ 利用Dataset和Dataloader创建迭代器，由嵌套函数完成训练。
 
-3. teration：迭代次数
-
- 
-
-\# Training cycle
-
-```
+```python
+# 每个循环完成一个训练轮数
 for epoch in range(training_epochs):
+	# 每个循环完成一个Mini-batch，train_loader由Dataloader创建
+	for i, data in enumerate(train_loader, 0):
 ```
-
-\# Loop over all batches
-
-```
-for i in range(total_batch):
-```
-
-\# 每个循环完成一个Mini-batch
 

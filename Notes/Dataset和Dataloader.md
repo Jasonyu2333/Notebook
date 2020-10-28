@@ -31,16 +31,28 @@ class subDataset(Dataset.Dataset):
         return data, label
 ```
 
+在类外对Data和Label赋值
 
 
-# DataLoader
 
-1. 概念
+## DataLoader
+
+### 概念
 
 DataLoader是一个迭代器，方便多线程的读取数据，主要用于实现batch以及shuffle。
 
-1. 实现
+### 实现
 
+引用
+
+```python
 import torch.utils.data.dataloader as DataLoader
+```
 
-\# 引用
+创建DataLoader迭代器
+
+```python
+dataloader = DataLoader.DataLoader(dataset,batch_size= 32, shuffle = True, num_workers= 2)
+# dataset：传入数据集，batch_size：一次训练的样本数，shuffle：是否打乱，进程数
+```
+
