@@ -1,38 +1,18 @@
 # Activation-functions(激活函数)
 
-[WHAT is Activation-functions?](Notes/Activation-functions.md#what-is-activation-functions)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## WHAT is Activation-functions?
 
 在神经元中，输入通过线性变换后，还被作用了一个非线性函数，称为激活函数。
 
-### WHY is Activation-functions?
+## WHY Activation-functions?
 
 最简单的道理，线性函数具有可加性和齐次性，所以无论多少线性层的叠加，线性网络多么复杂，最后都能转换为$\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{W} + \boldsymbol{b}$。
 
 很多问题都是非线性的，所以需要激活函数，使得神经网络具有非线性，这样才能更好的去学习。神经网络的实质就是寻找一个非线性的空间变换函数。
 
-### Types of Activation-functions
+## Types of Activation-functions
 
-#### ReLU函数族（Rectified Linear Unit）
+### ReLU函数族（Rectified Linear Unit）
 
 > **关于ReLU的引述**
 >
@@ -44,9 +24,24 @@
 >
 > [1]. Xu B, Wang N, Chen T, et al. Empirical evaluation of rectified activations in convolutional network[J]. arXiv preprint arXiv:1505.00853, 2015.
 
-##### 优点
+#### 优点
 
 - 克服梯度消失的问题
+
+    sigmoid有一个“梯度消失”的问题，即在|z|>4的区间梯度急剧减小，使得激活函数对z值变化的区分度下降，表达能力下降。而ReLU就没有这样的问题。
+
 - 加快训练速度
 
-##### 种类
+    这类斜坡函数的运算速度明显大于指数函数等等。
+
+#### 种类
+
+1. ##### ReLU()
+
+    ```
+    torch.nn.functional.relu(input, inplace = False)
+    ```
+
+    实现：ReLU(x) = max(0,x)
+
+    <img src="../Images/image-20201028211251897.png" alt="image-20201028211251897" style="zoom: 33%;" />

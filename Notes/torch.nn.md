@@ -1,6 +1,6 @@
-## torch.nn
+# torch.nn
 
-### torch.nn.Module
+## torch.nn.Module
 
 所有网络的基类，所有模型都应继承这个类。
 
@@ -10,7 +10,7 @@ class Model(torch.nn.Module):
         super(Model, self).__init__()
 ```
 
-### Linear layers
+## Linear layers
 
 ```python
 torch.nn.Linear(in_features, out_features, bias=True)

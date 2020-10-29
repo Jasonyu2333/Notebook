@@ -19,6 +19,8 @@
 
 #### [Activation-functions](Notes/Activation-functions.md) 
 
+#### [Optimization-algorithms](Notes/Optimization-algorithms.md) 
+
 ####  [Dataset和Dataloader](Notes/Dataset和Dataloader.md) 
 
 ####  [Torchvision](Notes/Torchvision.md)

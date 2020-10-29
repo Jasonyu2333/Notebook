@@ -1,6 +1,6 @@
-## Softmax Regression 
+# Softmax Regression 
 
-### 概念
+## 概念
 
 输出的是一个合法的类别预测分布，满足非负和归一性，输出值个数等于标签的类别数。Softmax是一个全连接的单层神经网路。
 
@@ -8,7 +8,7 @@
 
 
 
-### 模型
+## 模型
 
 ##### 对于单个样本 i，输入的特征值有d个，输出的标签数有q个，softmax回归的矢量计算表达式为：
 
@@ -28,7 +28,7 @@ ${\hat{\boldsymbol{Y}}} = softmax({\boldsymbol{O}})$
 
 
 
-### 损失函数
+## 损失函数
 
 > ![image-20201028131138666](../Images/image-20201028131138666.png)
 
@@ -46,7 +46,7 @@ $l(\boldsymbol{\Theta} ) = \frac{1}{n}\sum H({\boldsymbol{y}}^{(i)},{\hat{\bolds
 
 
 
-### Pytorch实现
+## Pytorch实现
 
 ```python
 loss = class torch.nn.CrossEntropyLoss(input, target, weight=None, size_average=True)
@@ -63,9 +63,7 @@ loss = class torch.nn.CrossEntropyLoss(input, target, weight=None, size_average=
 
 
 
-### 实例
-
-
+## 实例
 
 ```python
 import torch
@@ -73,7 +71,7 @@ from torchvision import transforms
 from torchvision import datasets
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
-import torch.optim as optim
+import torch.optim
 
 batch_size = 64
 # 定义dataloader需要的批量参数
@@ -96,7 +94,7 @@ transform=transform)
 test_loader = DataLoader(test_dataset,
 shuffle=False,
 batch_size=batch_size)
-
+# Design Model
 class Net(torch.nn.Module):
 	def __init__(self):
 		super(Net, self).__init__()
@@ -111,7 +109,11 @@ class Net(torch.nn.Module):
 		x = F.relu(self.l2(x))
 		x = F.relu(self.l3(x))
 		x = F.relu(self.l4(x))
-return self.l5(x)
+	return self.l5(x)
+
 model = Net()
+# Construct loss and Optimizer
+loss = torch.nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
 ```
 
