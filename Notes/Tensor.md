@@ -1,6 +1,6 @@
 # Tensor
 
-[Data type](#data type)
+[Data type](#data-type)
 
 
 
