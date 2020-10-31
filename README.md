@@ -17,9 +17,11 @@
 #### [内置函数](Notes/内置函数.md)
 
 # Pytorch
+#### [Torch](Notes/Torch.md) 
+
 #### [Tensor](Notes/Tensor.md)
 
-#### [torch.nn](Notes/torch.nn.md) 
+#### [Torch.nn](Notes/Torch.nn.md) 
 
 #### [Activation-functions](Notes/Activation-functions.md) 
 

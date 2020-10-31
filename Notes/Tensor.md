@@ -1,6 +1,10 @@
 # Tensor
 
-To almost all APIs, torch.add(x,y) = x.add(y).
+[Data type](#data type)
+
+
+
+To almost all APIs, torch.add(input,y) = input.add(y).
 
 Update:
 
@@ -234,7 +238,7 @@ Returns the dimension.
 
 
 
-### Transformation
+### Dimensional Transformation
 
 ```python
 a.view(*shape)
@@ -266,6 +270,42 @@ The returned tensor shares the same underlying data with this tensor.
 
 <img src="../Images/unsqueeze.jpg" alt="unsqueeze" style="zoom: 50%;" />
 
+```python
+torch.squeeze(input, dim=None)
+```
+
+Returns a tensor with size 1 removed. When `dim`=None, remove all size1.
+
+```python
+expand(*sizes)
+```
+
+Returns a new view of the `self` tensor with dimensions of size 1 expanded to a larger size.
+
+Passing -1 as the size for a dimension means not changing the size of that dimension.
+
+```python
+torch.transpose(input, dim0, dim1)
+```
+
+Swap `dim0` and `dim1 `.
+
+Note that the tensor layout w qill change. 
+
+> <img src="../Images/image-20201031172608603.png" alt="image-20201031172608603" style="zoom:50%;" />
+>
+> From the example it can be clearly understand that view won't change the layout but transpose will, and view will lose the dimension information but transpose won't. 
+
+```python
+permute(*dims)
+```
+
+Do transpose until the dimensions are in order of `dims`.
+
+## Broadcast
+
+
+
 
 
 
@@ -275,6 +315,14 @@ The returned tensor shares the same underlying data with this tensor.
 
 ​```
 ```
+
+## Matrix
+
+```python
+.t()
+```
+
+Returns the transpose of a matrix. 
 
 
 
@@ -288,12 +336,28 @@ Computes input ≥ other element-wise.
 
 `other`: can be a number or a tensor and the  shapes of `other` and `input` don’t need to match, but they must be broadcastable.
 
+```python
+a.all()
+```
 
+Returns True if all elements in the tensor are True.
 
+```python
+torch.eq(input, other)
+```
 
+Computes element-wise equality. Returns a boolean tensor.
 
+```python
+torch.all(torch.eq(a,b))
+```
 
+If a =b, returns 1, else returns 0.
 
-#### view(*args)
+## Others
 
-返回一个有相同数据但大小不同的tensor，参数中允许有一个-1，系统将自动计算该值，使得参数连乘等于原Tensor元素相同。
+```python
+contiguous(memory_format=torch.contiguous_format)
+```
+
+Returns a contiguous in memory tensor containing the same data as `self` tensor.
