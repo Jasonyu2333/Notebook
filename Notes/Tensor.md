@@ -31,9 +31,13 @@ Update:
 - x.add(y): the data of x holds, and the API will return a new tensor.
 - x.add_(y): update x.
 
+[Tensor](#tensor)
+
 
 
 ## Data type
+
+*Back to [Tensor](#tensor)*
 
 Everything is a tensor in pytorch. 
 
