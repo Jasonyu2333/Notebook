@@ -1,35 +1,34 @@
-# 机器学习
+# Notebook
 
-#### [Softmax-Regression](Notes/Softmax-Regression.md) 
+## Machine Learning
 
-####  [Mini-Batch](Notes/Mini-Batch.md) 
+#### [Softmax Regression](Notes/Softmax-Regression.md)
 
-## 神经网络
-
-#### [Neural Network](Notes/Neural Network.md)
+#### [Neural Network](Notes/Neural-Network.md)
 
 #### [CNN](Notes/CNN.md) 
 
-# Python
+## Python
 
-####  [面向对象编程](Notes/面向对象编程.md)
+#### [Python function](Notes/Python-function.md) 
 
-#### [内置函数](Notes/内置函数.md)
+#### [Object Oriented](Notes/Object–Oriented.md) 
 
-# Pytorch
+## Pytorch
+
 #### [Tensor](Notes/Tensor.md)
 
-#### [Torch.nn](Notes/Torch.nn.md)
+#### [nn](Notes/nn.md)
 
+#### [Data process](Notes/Data-process.md) 
 
+#### [Activation functions](Notes/Activation-functions.md) 
 
-#### [Activation-functions](Notes/Activation-functions.md) 
-
-#### [Optimization-algorithms](Notes/Optimization-algorithms.md) 
+#### [Optimization algorithms](Notes/Optimization-algorithms.md) 
 
 ####  [Torchvision](Notes/Torchvision.md)
 
-# Others
+## Others
 
-#### [命令行](Notes/命令行.md)
+#### [Cmd](Notes/Cmd.md)
 
