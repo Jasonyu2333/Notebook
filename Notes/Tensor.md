@@ -22,7 +22,7 @@
 
 [Others](#other)
 
-
+<br>
 
 To almost all APIs, torch.add(input,y) = input.add(y).
 
@@ -33,7 +33,7 @@ Update:
 
 [Tensor](#tensor)
 
-
+<br>
 
 ## Data type
 
@@ -64,7 +64,7 @@ Embedding: Word2vec, glove.
 | 64-bit integer (signed)  | `torch.int64` or `torch.long`     | `torch.LongTensor`      | `torch.cuda.LongTensor`     |
 | Boolean                  | `torch.bool`                      | `torch.BoolTensor`      | `torch.cuda.BoolTensor`     |
 
-
+<br>
 
 ## Creating
 
@@ -172,7 +172,7 @@ Returns a random permutation of integers from `0` to `n - 1`.
 
 Use this to create a random index.
 
-
+<br>
 
 ## Index
 
@@ -218,7 +218,7 @@ The dimension of input and index must match, and the size of each dimension must
 
 <img src="../Images/image-20201101113113190.png" alt="image-20201101113113190" style="zoom:50%;" />
 
-
+<br>
 
 ## Shape
 
@@ -280,7 +280,7 @@ a.dim()
 
 Returns the dimension.
 
-
+<br>
 
 ### Dimensional Transformation
 
@@ -346,7 +346,7 @@ permute(*dims)
 
 Do transpose until the dimensions are in order of `dims`.
 
-
+<br>
 
 ## Merge or split
 
@@ -388,7 +388,7 @@ Returns a tuple of tensors splitting by numbers from the input.
 
 <img src="../Images/image-20201101114129444.png" alt="image-20201101114129444" style="zoom: 50%;" />
 
-
+<br>
 
 ## Broadcast
 
@@ -416,7 +416,7 @@ If either has no dim, insert 1dim and expand to the same size.
 
 Otherwise, it's not broadcastable. 
 
-
+<br>
 
 ## Math Operation
 
@@ -437,7 +437,7 @@ Matrix product of two tensors. (always operation on Dimension -1 and Dimension -
 
 2-D: two tensors must be broadcastable except Dimension -1 and Dimension -2. 
 
-
+<br>
 
 ## Approximation
 
@@ -479,7 +479,7 @@ torch.clamp(input, min, max)
 
 <img src="../Images/image-20201101114129444.png" alt="image-20201101114129444" style="zoom:50%;" />
 
-
+<br>
 
 ## Statistics
 
@@ -555,7 +555,7 @@ torch.kthvalue(input, k, dim=None, keepdim=False)
 
 Returns a namedtuple `(values, indices)` where `values` is the `k` th smallest element of each row of the `input` tensor in the given dimension `dim`.
 
-
+<br>
 
 ## Comparing
 
@@ -587,7 +587,7 @@ torch.all(torch.eq(a,b))
 
 If a = b totally, returns 1, else returns 0.
 
-
+<br>
 
 ## Others
 
