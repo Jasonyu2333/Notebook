@@ -1,14 +1,16 @@
 # Data process
 
-## Data loading
 
-### API
 
-#### OS Module
+# Data loading
+
+## API
+
+### OS Module
 
 OS provides methods for handling files and directories.
 
-##### Get fnames
+#### Get fnames
 
 ```python
 os.listdir(path)
@@ -18,7 +20,7 @@ Returns a `list` of fnames of files and folders contained in the folder specifie
 
 `path`: './...'
 
-##### Connect paths
+#### Connect paths
 
 ```python
 os.path.join(path1, path2, ...)
@@ -26,11 +28,11 @@ os.path.join(path1, path2, ...)
 
 Returns a string = 'path1/path2/...'
 
+<br>
 
+#### [API](https://www.runoob.com/python/os-file-methods.html)
 
-##### [API](https://www.runoob.com/python/os-file-methods.html)
-
-
+Method
 
 
 
