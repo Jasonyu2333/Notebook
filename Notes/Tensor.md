@@ -68,6 +68,8 @@ Embedding: Word2vec, glove.
 
 ## Creating
 
+*Back to [Tensor](#tensor)*
+
 ### Keyword Arguments
 
 `dtype`: Desires data type. If None, uses a global default. 
@@ -174,6 +176,8 @@ Use this to create a random index.
 
 ## Index
 
+*Back to [Tensor](#tensor)*
+
 ### Slice operation
 
 ```python
@@ -217,6 +221,8 @@ The dimension of input and index must match, and the size of each dimension must
 
 
 ## Shape
+
+*Back to [Tensor](#tensor)*
 
 ### Shape Check
 
@@ -344,6 +350,8 @@ Do transpose until the dimensions are in order of `dims`.
 
 ## Merge or split
 
+*Back to [Tensor](#tensor)*
+
 ```python
 torch.cat(seq, dim=0)
 ```
@@ -384,6 +392,8 @@ Returns a tuple of tensors splitting by numbers from the input.
 
 ## Broadcast
 
+*Back to [Tensor](#tensor)*
+
 ### What is broadcast? 
 
 Expand automatically without copying data.
@@ -410,6 +420,8 @@ Otherwise, it's not broadcastable.
 
 ## Math Operation
 
+*Back to [Tensor](#tensor)*
+
 ```python
 .t()
 ```
@@ -428,6 +440,8 @@ Matrix product of two tensors. (always operation on Dimension -1 and Dimension -
 
 
 ## Approximation
+
+*Back to [Tensor](#tensor)*
 
 ```python
 torch.floor(input)
@@ -468,6 +482,8 @@ torch.clamp(input, min, max)
 
 
 ## Statistics
+
+*Back to [Tensor](#tensor)*
 
 ### Keyword Arguments
 
@@ -543,6 +559,8 @@ Returns a namedtuple `(values, indices)` where `values` is the `k` th smallest e
 
 ## Comparing
 
+*Back to [Tensor](#tensor)*
+
 ```python
 torch.ge(input, other)
 ```
@@ -572,6 +590,8 @@ If a = b totally, returns 1, else returns 0.
 
 
 ## Others
+
+*Back to [Tensor](#tensor)*
 
 ```python
 torch.where(condition, x, y)

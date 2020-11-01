@@ -1,3 +1,41 @@
+# Data process
+
+## Data loading
+
+### OS Module
+
+OS provides methods for handling files and directories.
+
+##### 2 fnames
+
+```python
+os.listdir(path)
+```
+
+Returns a `list` of fnames of files and folders contained in the folder specified by `path`.
+
+`path`: './...'
+
+```python
+os.path.join(path1, path2, ...)
+```
+
+
+
+[API](https://www.runoob.com/python/os-file-methods.html)
+
+
+
+
+
+~~~python
+```python
+
+```
+~~~
+
+
+
 ## Dataset
 
 ### 概念
@@ -9,13 +47,13 @@
 引用包
 
 ```
-import torch.utils.data.dataset as Dataset
+import torch.utils.data.Dataset as Dataset
 import numpy as np
 ```
 
  创建dataset的子类
 
-```
+```python
 class subDataset(Dataset.Dataset):
     #初始化，定义数据内容和标签
     def __init__(self, Data, Label):
@@ -30,6 +68,13 @@ class subDataset(Dataset.Dataset):
         label = torch.Tensor(self.Label[index])
         return data, label
 ```
+
+- `__getitem__`：Returns a data or sample. `obj[index]` = `obj.__getitem__(index)`
+- `__len__`：Returns the number of samples. `len(obj)` = `obj.__len__()`
+
+
+
+
 
 在类外对Data和Label赋值
 
@@ -55,4 +100,6 @@ import torch.utils.data.dataloader as DataLoader
 dataloader = DataLoader.DataLoader(dataset,batch_size= 32, shuffle = True, num_workers= 2)
 # dataset：传入数据集，batch_size：一次训练的样本数，shuffle：是否打乱，进程数
 ```
+
+
 

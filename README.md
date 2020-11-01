@@ -17,21 +17,19 @@
 #### [内置函数](Notes/内置函数.md)
 
 # Pytorch
-#### [Torch](Notes/Torch.md) 
-
 #### [Tensor](Notes/Tensor.md)
 
-#### [Torch.nn](Notes/Torch.nn.md) 
+#### [Torch.nn](Notes/Torch.nn.md)
+
+
 
 #### [Activation-functions](Notes/Activation-functions.md) 
 
 #### [Optimization-algorithms](Notes/Optimization-algorithms.md) 
 
-####  [Dataset和Dataloader](Notes/Dataset和Dataloader.md) 
-
 ####  [Torchvision](Notes/Torchvision.md)
 
-# 其他
+# Others
 
 #### [命令行](Notes/命令行.md)
 
