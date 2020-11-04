@@ -28,11 +28,29 @@ os.path.join(path1, path2, ...)
 
 Returns a string = 'path1/path2/...'
 
+#### More about [API](https://www.runoob.com/python/os-file-methods.html)
+
 <br>
 
-#### [API](https://www.runoob.com/python/os-file-methods.html)
+## Methods
 
-Method
+```python
+# Define a dataset class.
+class DogCat(data.Dataset):
+    def __init__(self, root):
+  	  imgs = os.listdir(root)
+  	  self.imgs = [os.path.join(root, img) for img in imgs]
+```
+
+When an object is instantiated, input `root` : the path of the folder where samples are all at.
+
+`self.imgs` : a list of all samples' name. 
+
+
+
+
+
+
 
 
 
