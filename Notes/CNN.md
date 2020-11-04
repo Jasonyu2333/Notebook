@@ -62,6 +62,6 @@ When we input a colorful image, which is actually a 3-D matrix, the filter is a 
 
 ## Theory
 
-
+\
 
 ## Implementation
